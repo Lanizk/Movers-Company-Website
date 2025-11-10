@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - KenyaMovers</title>
+  <title>Services - Munene and Sons</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -38,7 +38,7 @@
       <a href="/" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">KenyaMovers</h1>
+        <h1 class="sitename">Munene and Sons</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -63,7 +63,7 @@
 
     <div class="hero-video-container">
       <video autoplay="" muted="" loop="">
-        <source src="assets/img/construction/video-1.mp4" type="video/mp4">
+        <source src="assets/img/movers/video-1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
       <div class="hero-overlay"></div>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="stat-item">
-                    <span class="stat-number" data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="2">1200</span>
+                    <span class="stat-number" data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2">500</span>
                     <span class="stat-label">Projects Completed</span>
                   </div>
                 </div>
@@ -299,7 +299,7 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-1.webp" alt="Residential Moving" class="img-fluid">
+            <img src="assets/img/services/residential.jpg" alt="Residential Moving" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Residential Moving Services</h3>
@@ -315,7 +315,7 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-1.webp" alt="Commercial Moving" class="img-fluid">
+            <img src="assets/img/services/commercial-moving.jpg" alt="Commercial Moving" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Commercial Moving Services</h3>
@@ -331,7 +331,7 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-3.webp" alt="Packing Services" class="img-fluid">
+            <img src="assets/img/services/proffesional-packing.jpg" alt="Packing Services" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Professional Packing Services</h3>
@@ -347,7 +347,7 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-4.webp" alt="Storage Solutions" class="img-fluid">
+            <img src="assets/img/services/secure-storage.jpg" alt="Storage Solutions" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Secure Storage Solutions</h3>
@@ -416,96 +416,8 @@
   </div>
 
      
- <div class="cta-main" data-aos="fade-up" data-aos-delay="300">
-      <div class="row align-items-center g-5">
 
-        <div class="col-lg-6">
-          <div class="achievements-grid">
-            <div class="achievement-item" data-aos="zoom-in" data-aos-delay="400">
-              <div class="achievement-icon">
-                <i class="bi bi-truck"></i>
-              </div>
-              <div class="achievement-info">
-                <h3>1200+</h3>
-                <span>Successful Moves</span>
-              </div>
-            </div>
-
-            <div class="achievement-item" data-aos="zoom-in" data-aos-delay="450">
-              <div class="achievement-icon">
-                <i class="bi bi-clock-history"></i>
-              </div>
-              <div class="achievement-info">
-                <h3>10+</h3>
-                <span>Years Experience</span>
-              </div>
-            </div>
-
-            <div class="achievement-item" data-aos="zoom-in" data-aos-delay="500">
-              <div class="achievement-icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <div class="achievement-info">
-                <h3>100%</h3>
-                <span>Insured Services</span>
-              </div>
-            </div>
-
-            <div class="achievement-item" data-aos="zoom-in" data-aos-delay="550">
-              <div class="achievement-icon">
-                <i class="bi bi-star-fill"></i>
-              </div>
-              <div class="achievement-info">
-                <h3>97%</h3>
-                <span>Satisfaction Rate</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="action-panel" data-aos="fade-left" data-aos-delay="350">
-
-            <div class="panel-content">
-              <h3>Get Your Free Quote Today</h3>
-              <p>Contact us now to discuss your moving needs and receive a customized quote. Our team is ready to assist you with professional service.</p>
-
-              <div class="action-buttons">
-                <a href="quote.html" class="btn-primary">
-                  <span>Request Quote</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-                <a href="/contact" class="btn-secondary">
-                  <span>Contact Us</span>
-                  <i class="bi bi-telephone"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-quick">
-              <div class="contact-row">
-                <i class="bi bi-telephone-fill"></i>
-                <div class="contact-details">
-                  <span class="contact-label">Call Us Now</span>
-                  <span class="contact-value">+254 712 345 678</span>
-                </div>
-              </div>
-
-              <div class="contact-row">
-                <i class="bi bi-envelope-fill"></i>
-                <div class="contact-details">
-                  <span class="contact-label">Email Us</span>
-                  <span class="contact-value">info@kenyamovers.co.ke</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
+    
 
 
 

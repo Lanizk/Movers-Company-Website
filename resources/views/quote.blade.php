@@ -653,4 +653,331 @@
 
           <!-- Step 5: Review & Submit -->
           <div class="form-step" data-step="5">
-            <div class="
+            <div class="content">
+              <h2 class="section-title">Review Your Information</h2>
+              <p class="section-subtitle">Please review your details before submitting</p>
+
+              <div class="alert alert-info d-flex align-items-start">
+                <i class="bi bi-info-circle fs-4 me-3"></i>
+                <div>
+                  <strong>What happens next?</strong>
+                  <p class="mb-0">Once you submit this form, our team will review your request and contact you within 24 hours with a detailed quote. We may call to clarify some details for the most accurate pricing.</p>
+                </div>
+              </div>
+
+              <div class="row g-4 mt-3">
+                <div class="col-md-6">
+                  <div class="feature-card">
+                    <div class="icon-box bg-primary text-white">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                    <h5>Quick Response</h5>
+                    <p class="text-muted mb-0">Get your quote within 24 hours</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-card">
+                    <div class="icon-box bg-success text-white">
+                      <i class="bi bi-cash-coin"></i>
+                    </div>
+                    <h5>No Hidden Fees</h5>
+                    <p class="text-muted mb-0">Transparent pricing, no surprises</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-card">
+                    <div class="icon-box bg-warning text-white">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h5>Fully Insured</h5>
+                    <p class="text-muted mb-0">Your items are protected</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-card">
+                    <div class="icon-box bg-info text-white">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <h5>Expert Team</h5>
+                    <p class="text-muted mb-0">Professional movers at your service</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check mt-4">
+                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                <label class="form-check-label" for="agreeTerms">
+                  I agree to the <a href="#" class="text-primary">Terms and Conditions</a> and <a href="#" class="text-primary">Privacy Policy</a>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="d-flex justify-content-between mt-5">
+            <button type="button" class="btn btn-secondary btn-navigation" id="prevBtn" style="display: none;">
+              <i class="bi bi-arrow-left me-2"></i> Previous
+            </button>
+            <button type="button" class="btn btn-primary btn-navigation ms-auto" id="nextBtn">
+              Next <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+            <button type="submit" class="btn btn-primary btn-navigation ms-auto" id="submitBtn" style="display: none;">
+              <i class="bi bi-check-circle me-2"></i> Submit Quote Request
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </section><!-- /Quote Form Section -->
+
+    <!-- Why Choose Us Section -->
+    <section id="certifications" class="certifications section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why Get a Quote from Us?</h2>
+        <p>Our certifications and experience guarantee professional, safe, and reliable moving services</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 mt-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="certification-item">
+              <div class="certification-badge">
+                <i class="bi bi-award fs-1 text-primary"></i>
+              </div>
+              <h4>10+ Years Experience</h4>
+              <p>Trusted moving experts with a proven track record</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="certification-item">
+              <div class="certification-badge">
+                <i class="bi bi-truck fs-1 text-success"></i>
+              </div>
+              <h4>500+ Moves</h4>
+              <p>Successfully completed relocations across Kenya</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="certification-item">
+              <div class="certification-badge">
+                <i class="bi bi-star-fill fs-1 text-warning"></i>
+              </div>
+              <h4>97% Satisfaction</h4>
+              <p>Happy customers who trust and recommend us</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="certification-item">
+              <div class="certification-badge">
+                <i class="bi bi-shield-fill-check fs-1 text-info"></i>
+              </div>
+              <h4>Fully Certified</h4>
+              <p>KEBS, NITA, NTSA licensed and insured</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Choose Us Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a href="/" class="logo d-flex align-items-center mb-3">
+              <span class="sitename">Munene and Sons</span>
+            </a>
+            <p class="tagline">Making relocations seamless, safe, and stress-free with professional moving services.</p>
+
+            <div class="social-links mt-4">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="footer-links-grid">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                  <li><a href="/about">About Us</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">News & Updates</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4">
+                <h5>Services</h5>
+                <ul class="list-unstyled">
+                  <li><a href="/service">Residential Moves</a></li>
+                  <li><a href="/service">Commercial Moves</a></li>
+                  <li><a href="/service">Packing & Storage</a></li>
+                  <li><a href="/service">Long-Distance Relocation</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4">
+                <h5>Support</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="/contact">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="footer-cta">
+            <h5>Let's Connect</h5>
+            <a href="/contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-bottom-content">
+              <p class="mb-0">© <span class="sitename">Munene and Sons</span>. All rights reserved.</p>
+              <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+
+    // Multi-step form
+    let currentStep = 1;
+    const totalSteps = 5;
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const submitBtn = document.getElementById('submitBtn');
+
+    function showStep(step) {
+      // Hide all steps
+      document.querySelectorAll('.form-step').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      // Show current step
+      document.querySelector(`.form-step[data-step="${step}"]`).classList.add('active');
+
+      // Update step indicators
+      document.querySelectorAll('.step').forEach((el, index) => {
+        const stepNum = index + 1;
+        el.classList.remove('active', 'completed');
+        
+        if (stepNum < step) {
+          el.classList.add('completed');
+        } else if (stepNum === step) {
+          el.classList.add('active');
+        }
+      });
+
+      // Update buttons
+      prevBtn.style.display = step === 1 ? 'none' : 'inline-block';
+      nextBtn.style.display = step === totalSteps ? 'none' : 'inline-block';
+      submitBtn.style.display = step === totalSteps ? 'inline-block' : 'none';
+
+      // Scroll to top of form
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function validateStep(step) {
+      const currentStepEl = document.querySelector(`.form-step[data-step="${step}"]`);
+      const requiredInputs = currentStepEl.querySelectorAll('[required]');
+      let isValid = true;
+
+      requiredInputs.forEach(input => {
+        if (!input.value || (input.type === 'checkbox' && !input.checked) || (input.type === 'radio' && !currentStepEl.querySelector(`input[name="${input.name}"]:checked`))) {
+          isValid = false;
+          input.classList.add('is-invalid');
+        } else {
+          input.classList.remove('is-invalid');
+        }
+      });
+
+      return isValid;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (validateStep(currentStep)) {
+        currentStep++;
+        showStep(currentStep);
+      } else {
+        alert('Please fill in all required fields before proceeding.');
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentStep--;
+      showStep(currentStep);
+    });
+
+    // Initialize first step
+    showStep(1);
+
+    // Remove validation styling on input
+    document.querySelectorAll('input, select, textarea').forEach(input => {
+      input.addEventListener('input', () => {
+        input.classList.remove('is-invalid');
+      });
+    });
+  </script>
+
+</body>
+
+</html>

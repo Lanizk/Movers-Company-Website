@@ -51,7 +51,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted d-none d-sm-block" href="quote.html">Request Quote</a>
+      <a class="btn-getstarted d-none d-sm-block" href="/quote">Request Quote</a>
 
     </div>
   </header>
