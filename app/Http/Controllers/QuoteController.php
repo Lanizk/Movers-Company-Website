@@ -23,7 +23,20 @@ class QuoteController extends Controller
      */
     public function store(Request $request)
     {
-        // Validate the request
+      
+      
+        $request->merge([
+        'packing_service' => $request->has('packing_service'),
+        'storage_required' => $request->has('storage_required'),
+        'fragile_items' => $request->has('fragile_items'),
+        'heavy_items' => $request->has('heavy_items'),
+        'assembly_required' => $request->has('assembly_required'),
+        'insurance_required' => $request->has('insurance_required'),
+        'unpacking_service' => $request->has('unpacking_service'),
+        'date_flexible' => $request->has('date_flexible'),
+         ]);
+    
+    
         $validated = $request->validate([
             'full_name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -53,12 +66,13 @@ class QuoteController extends Controller
             'special_instructions' => 'nullable|string|max:1000',
             'estimated_budget' => 'nullable|numeric|min:0',
         ]);
+        
 
         // Create the quote request
         $quoteRequest = QuoteRequest::create($validated);
 
         // Send email to admin
-        Mail::to(config('mail.admin_email', 'info@muneneandsons.co.ke'))
+        Mail::to(config('mail.admin_email', 'allanmurimi96@gmail.com'))
             ->send(new QuoteRequestReceived($quoteRequest));
 
         // Send confirmation email to customer

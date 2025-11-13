@@ -890,93 +890,104 @@
   <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
 
-  <script>
-    // Initialize AOS
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
+<script>
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false
+  });
+
+  // Multi-step form
+  let currentStep = 1;
+  const totalSteps = 5;
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const submitBtn = document.getElementById('submitBtn');
+  const form = document.querySelector('form'); // Assuming your form is the first <form>
+
+  function showStep(step) {
+    // Hide all steps
+    document.querySelectorAll('.form-step').forEach(el => {
+      el.classList.remove('active');
     });
 
-    // Multi-step form
-    let currentStep = 1;
-    const totalSteps = 5;
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const submitBtn = document.getElementById('submitBtn');
+    // Show current step
+    document.querySelector(`.form-step[data-step="${step}"]`).classList.add('active');
 
-    function showStep(step) {
-      // Hide all steps
-      document.querySelectorAll('.form-step').forEach(el => {
-        el.classList.remove('active');
-      });
+    // Update step indicators
+    document.querySelectorAll('.step').forEach((el, index) => {
+      const stepNum = index + 1;
+      el.classList.remove('active', 'completed');
 
-      // Show current step
-      document.querySelector(`.form-step[data-step="${step}"]`).classList.add('active');
-
-      // Update step indicators
-      document.querySelectorAll('.step').forEach((el, index) => {
-        const stepNum = index + 1;
-        el.classList.remove('active', 'completed');
-        
-        if (stepNum < step) {
-          el.classList.add('completed');
-        } else if (stepNum === step) {
-          el.classList.add('active');
-        }
-      });
-
-      // Update buttons
-      prevBtn.style.display = step === 1 ? 'none' : 'inline-block';
-      nextBtn.style.display = step === totalSteps ? 'none' : 'inline-block';
-      submitBtn.style.display = step === totalSteps ? 'inline-block' : 'none';
-
-      // Scroll to top of form
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function validateStep(step) {
-      const currentStepEl = document.querySelector(`.form-step[data-step="${step}"]`);
-      const requiredInputs = currentStepEl.querySelectorAll('[required]');
-      let isValid = true;
-
-      requiredInputs.forEach(input => {
-        if (!input.value || (input.type === 'checkbox' && !input.checked) || (input.type === 'radio' && !currentStepEl.querySelector(`input[name="${input.name}"]:checked`))) {
-          isValid = false;
-          input.classList.add('is-invalid');
-        } else {
-          input.classList.remove('is-invalid');
-        }
-      });
-
-      return isValid;
-    }
-
-    nextBtn.addEventListener('click', () => {
-      if (validateStep(currentStep)) {
-        currentStep++;
-        showStep(currentStep);
-      } else {
-        alert('Please fill in all required fields before proceeding.');
+      if (stepNum < step) {
+        el.classList.add('completed');
+      } else if (stepNum === step) {
+        el.classList.add('active');
       }
     });
 
-    prevBtn.addEventListener('click', () => {
-      currentStep--;
-      showStep(currentStep);
-    });
+    // Update buttons
+    prevBtn.style.display = step === 1 ? 'none' : 'inline-block';
+    nextBtn.style.display = step === totalSteps ? 'none' : 'inline-block';
+    submitBtn.style.display = step === totalSteps ? 'inline-block' : 'none';
 
-    // Initialize first step
-    showStep(1);
+    
+  }
 
-    // Remove validation styling on input
-    document.querySelectorAll('input, select, textarea').forEach(input => {
-      input.addEventListener('input', () => {
+  function validateStep(step) {
+    const currentStepEl = document.querySelector(`.form-step[data-step="${step}"]`);
+    const requiredInputs = currentStepEl.querySelectorAll('[required]');
+    let isValid = true;
+
+    requiredInputs.forEach(input => {
+      if (!input.value || (input.type === 'checkbox' && !input.checked) || (input.type === 'radio' && !currentStepEl.querySelector(`input[name="${input.name}"]:checked`))) {
+        isValid = false;
+        input.classList.add('is-invalid');
+      } else {
         input.classList.remove('is-invalid');
-      });
+      }
     });
-  </script>
+
+    return isValid;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (validateStep(currentStep)) {
+      currentStep++;
+      showStep(currentStep);
+    } else {
+      alert('Please fill in all required fields before proceeding.');
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentStep--;
+    showStep(currentStep);
+  });
+
+  // Submit button only triggers if last step is valid
+  submitBtn.addEventListener('click', (e) => {
+    if (!validateStep(currentStep)) {
+      e.preventDefault();
+      alert('Please fill in all required fields before submitting.');
+    } else {
+      form.submit(); // Actually submit the form
+    }
+  });
+
+  // Initialize first step
+  showStep(1);
+
+  // Remove validation styling on input
+  document.querySelectorAll('input, select, textarea').forEach(input => {
+    input.addEventListener('input', () => {
+      input.classList.remove('is-invalid');
+    });
+  });
+</script>
+
 
 </body>
 

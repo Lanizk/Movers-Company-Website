@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact - KenyaMovers</title>
+  <title>Contact - Munene and Sons and Transporters</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -38,7 +38,7 @@
       <a href="/" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">KenyaMovers</h1>
+        <h1 class="sitename">Munene and Sons and Transporters</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -96,8 +96,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="stat-item">
-                    <span class="stat-number" data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="2">2</span>
-                    <span class="stat-label">Office Locations</span>
+                    <span class="stat-number" data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="2">1</span>
+                    <span class="stat-label">Office Location</span>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -168,7 +168,7 @@
       <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
         <div class="image-section">
           <div class="main-image">
-            <img src="assets/img/construction/project-4.webp" alt="Contact KenyaMovers" class="img-fluid">
+            <img src="assets/img/movers/boxes.jpg" alt="Contact KenyaMovers" class="img-fluid">
           </div>
           <div class="floating-badge" data-aos="zoom-in" data-aos-delay="500">
             <div class="badge-content">
@@ -299,12 +299,12 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-1.webp" alt="Request Quote" class="img-fluid">
+            <img src="assets/img/movers/free quote.jpg" alt="Request Quote" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Request a Free Quote</h3>
             <p>Get a detailed, no-obligation quote for your move. Fill out our form or call us directly to discuss your requirements and receive pricing.</p>
-            <a href="quote.html" class="service-link">
+            <a href="/quote" class="service-link">
               <span>Get Quote</span>
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -315,12 +315,13 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-1.webp" alt="Schedule Consultation" class="img-fluid">
+            <img src="assets/img/movers/consultation.jpg" alt="Schedule Consultation" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Schedule a Consultation</h3>
             <p>Book a free in-home or virtual consultation. Our team will assess your needs and provide personalized moving solutions.</p>
-            <a href="#" class="service-link">
+              
+            <a href="#contact-form" class="service-link">
               <span>Book Now</span>
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -331,15 +332,12 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-3.webp" alt="Emergency Moving" class="img-fluid">
+            <img src="assets/img/movers/emergency moving.jpg" alt="Emergency Moving" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Emergency Moving Services</h3>
             <p>Need to move urgently? Our 24/7 emergency service ensures you can relocate quickly with the same quality and care.</p>
-            <a href="tel:+254712345678" class="service-link">
-              <span>Call Emergency Line</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+            
           </div>
         </div>
       </div><!-- End Move 3 -->
@@ -347,15 +345,12 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
         <div class="service-item">
           <div class="service-visual">
-            <img src="assets/img/construction/project-4.webp" alt="Customer Support" class="img-fluid">
+            <img src="assets/img/movers/customer service 2.jpg" alt="Customer Support" class="img-fluid">
           </div>
           <div class="service-content">
             <h3>Customer Support</h3>
             <p>Have questions during your move? Our support team is available round the clock to assist you with any concerns or updates.</p>
-            <a href="mailto:support@kenyamovers.co.ke" class="service-link">
-              <span>Contact Support</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+            
           </div>
         </div>
       </div><!-- End Move 4 -->
@@ -393,7 +388,11 @@
 
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+       
+
+       <form action="{{ route('contact.send') }}" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        @csrf
+
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -479,11 +478,12 @@
           <div class="certification-badge">
             <img src="assets/img/construction/badge-2.webp" alt="Mombasa Office" class="img-fluid">
           </div>
-          <h4>Mombasa Branch</h4>
-          <p><strong>Address:</strong> Nyerere Avenue, Mombasa</p>
-          <p><strong>Phone:</strong> +254 722 345 678</p>
-          <p><strong>Email:</strong> mombasa@kenyamovers.co.ke</p>
-          <p><strong>Hours:</strong> Mon-Sat: 8:00 AM - 6:00 PM</p>
+          <h4>Customer Service Desk</h4>
+              <p><strong>Phone:</strong> +254 700 000 000</p>
+              <p><strong>Email:</strong> help@kenyamovers.co.ke</p>
+              <p><strong>Hours:</strong> Mon-Sun: 8:00 AM - 8:00 PM</p>
+              <p><em>Fastest support for quotes and inquiries!</em></p>
+
         </div>
       </div>
 
@@ -543,17 +543,13 @@
           <div class="col-lg-4 col-md-6">
             <div class="team-member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="">
+                <img src="assets/img/movers/customer.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>How quickly will I get a response?</h4>
                 <span>Response Times</span>
                 <p>We respond to all inquiries within one hour during business hours. Emergency calls are answered immediately 24/7.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-clock"></i></a>
-                  <a href=""><i class="bi bi-telephone"></i></a>
-                  <a href=""><i class="bi bi-envelope"></i></a>
-                </div>
+                
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -561,17 +557,13 @@
           <div class="col-lg-4 col-md-6">
             <div class="team-member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/construction/team-3.webp" class="img-fluid" alt="">
+                <img src="assets/img/movers/support.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>Can I get a quote online?</h4>
                 <span>Online Quotes</span>
                 <p>Yes! Fill out our contact form with your moving details, and we'll send you a detailed quote within one hour.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-file-text"></i></a>
-                  <a href=""><i class="bi bi-calculator"></i></a>
-                  <a href=""><i class="bi bi-check-circle"></i></a>
-                </div>
+                
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -788,7 +780,7 @@
 
   <!-- Vendor JS Files -->
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/php-email-form/validate.js"></script>
+
   <script src="/assets/vendor/aos/aos.js"></script>
   <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
