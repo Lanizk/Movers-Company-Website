@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Request Quote - Munene and Sons</title>
+  <title>Request Quote - Munene and Sons Transporters</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
+  <!-- <link href="/assets/img/favicon.png" rel="icon"> -->
   <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -29,6 +29,34 @@
 
   <style>
     /* Multi-step form specific styles */
+
+  /* Style for the radio cards */
+.radio-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.radio-card input[type="radio"] {
+  display: none; /* hide default radio button */
+}
+
+/* When radio is checked, style the card */
+.radio-card input[type="radio"]:checked + .card-content {
+  border: 2px solid #04469F;
+  background-color: #e6f0ff;
+  border-radius: 8px;
+}
+
+/* Card content styling */
+.card-content {
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+
     .step-indicator {
       display: flex;
       justify-content: space-between;
@@ -208,7 +236,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="/" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename">Munene and Sons</h1>
+        <h1 class="sitename">Munene and Sons Transporters</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -382,22 +410,22 @@
 
               <div class="row g-4">
                 <div class="col-md-6">
-                  <label class="form-label fw-semibold">Origin Address <span class="text-danger">*</span></label>
-                  <input type="text" name="origin_address" class="form-control" placeholder="123 Main Street" value="{{ old('origin_address') }}" required>
+                  <label class="form-label fw-semibold">Origin Town <span class="text-danger">*</span></label>
+                  <input type="text" name="origin_address" class="form-control" placeholder="Rongai" value="{{ old('origin_address') }}" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label fw-semibold">Origin City <span class="text-danger">*</span></label>
+                  <label class="form-label fw-semibold">Origin County <span class="text-danger">*</span></label>
                   <input type="text" name="origin_city" class="form-control" placeholder="Nairobi" value="{{ old('origin_city') }}" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label fw-semibold">Destination Address <span class="text-danger">*</span></label>
-                  <input type="text" name="destination_address" class="form-control" placeholder="456 Oak Avenue" value="{{ old('destination_address') }}" required>
+                  <label class="form-label fw-semibold">Destination Town <span class="text-danger">*</span></label>
+                  <input type="text" name="destination_address" class="form-control" placeholder="Kisauni" value="{{ old('destination_address') }}" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label class="form-label fw-semibold">Destination City <span class="text-danger">*</span></label>
+                  <label class="form-label fw-semibold">Destination County <span class="text-danger">*</span></label>
                   <input type="text" name="destination_city" class="form-control" placeholder="Mombasa" value="{{ old('destination_city') }}" required>
                 </div>
 
@@ -652,66 +680,137 @@
           </div>
 
           <!-- Step 5: Review & Submit -->
-          <div class="form-step" data-step="5">
-            <div class="content">
-              <h2 class="section-title">Review Your Information</h2>
-              <p class="section-subtitle">Please review your details before submitting</p>
+   <div class="form-step" data-step="5">
+  <div class="content">
+    <h2 class="section-title">Review Your Information</h2>
+    <p class="section-subtitle">Please review your details before submitting</p>
 
-              <div class="alert alert-info d-flex align-items-start">
-                <i class="bi bi-info-circle fs-4 me-3"></i>
-                <div>
-                  <strong>What happens next?</strong>
-                  <p class="mb-0">Once you submit this form, our team will review your request and contact you within 24 hours with a detailed quote. We may call to clarify some details for the most accurate pricing.</p>
-                </div>
-              </div>
+    <div class="alert alert-light border d-flex align-items-start mb-4">
+      <i class="bi bi-info-circle fs-4 me-3 text-secondary"></i>
+      <div>
+        <strong>What happens next?</strong>
+        <p class="mb-0">Once you submit this form, our team will review your request and contact you within 24 hours with a detailed quote. We may call to clarify some details for the most accurate pricing.</p>
+      </div>
+    </div>
 
-              <div class="row g-4 mt-3">
-                <div class="col-md-6">
-                  <div class="feature-card">
-                    <div class="icon-box bg-primary text-white">
-                      <i class="bi bi-clock"></i>
-                    </div>
-                    <h5>Quick Response</h5>
-                    <p class="text-muted mb-0">Get your quote within 24 hours</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="feature-card">
-                    <div class="icon-box bg-success text-white">
-                      <i class="bi bi-cash-coin"></i>
-                    </div>
-                    <h5>No Hidden Fees</h5>
-                    <p class="text-muted mb-0">Transparent pricing, no surprises</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="feature-card">
-                    <div class="icon-box bg-warning text-white">
-                      <i class="bi bi-shield-check"></i>
-                    </div>
-                    <h5>Fully Insured</h5>
-                    <p class="text-muted mb-0">Your items are protected</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="feature-card">
-                    <div class="icon-box bg-info text-white">
-                      <i class="bi bi-people"></i>
-                    </div>
-                    <h5>Expert Team</h5>
-                    <p class="text-muted mb-0">Professional movers at your service</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-check mt-4">
-                <input class="form-check-input" type="checkbox" id="agreeTerms" required>
-                <label class="form-check-label" for="agreeTerms">
-                  I agree to the <a href="#" class="text-primary">Terms and Conditions</a> and <a href="#" class="text-primary">Privacy Policy</a>
-                </label>
-              </div>
-            </div>
+    <!-- Contact Information -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header border-0">
+        <h5 class="mb-0"><i class="bi bi-person-circle me-2"></i>Contact Information</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">Full Name</small>
+            <strong id="review-name">-</strong>
           </div>
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">Phone Number</small>
+            <strong id="review-phone">-</strong>
+          </div>
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">Email Address</small>
+            <strong id="review-email">-</strong>
+          </div>
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">Preferred Contact</small>
+            <strong id="review-contact">-</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Move Details -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header border-0">
+        <h5 class="mb-0"><i class="bi bi-geo-alt me-2"></i>Move Details</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">From</small>
+            <strong id="review-origin">-</strong>
+          </div>
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">To</small>
+            <strong id="review-destination">-</strong>
+          </div>
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">Move Date</small>
+            <strong id="review-date">-</strong>
+          </div>
+          <div class="col-md-6 mb-3">
+            <small class="text-muted d-block">Date Flexibility</small>
+            <strong id="review-flexible">-</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property Details -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header border-0">
+        <h5 class="mb-0"><i class="bi bi-house me-2"></i>Property Details</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <small class="text-muted d-block">Move Type</small>
+            <strong id="review-move-type">-</strong>
+          </div>
+          <div class="col-md-4 mb-3">
+            <small class="text-muted d-block">Property Size</small>
+            <strong id="review-property-size">-</strong>
+          </div>
+          <div class="col-md-4 mb-3">
+            <small class="text-muted d-block">Access Type</small>
+            <strong id="review-access">-</strong>
+          </div>
+          <div class="col-12 mb-3" id="review-inventory-container" style="display: none;">
+            <small class="text-muted d-block">Inventory List</small>
+            <p id="review-inventory" class="mb-0">-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Services -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-header border-0">
+        <h5 class="mb-0"><i class="bi bi-list-check me-2"></i>Additional Services</h5>
+      </div>
+      <div class="card-body">
+        <div id="review-services" class="mb-3">
+          <small class="text-muted">No additional services selected</small>
+        </div>
+        <div id="review-instructions-container" style="display: none;">
+          <small class="text-muted d-block">Special Instructions</small>
+          <p id="review-instructions" class="mb-0">-</p>
+        </div>
+        <div id="review-budget-container" style="display: none;" class="mt-3">
+          <small class="text-muted d-block">Estimated Budget</small>
+          <strong id="review-budget">-</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-light border d-flex align-items-center">
+      <i class="bi bi-pencil-square fs-4 me-3 text-secondary"></i>
+      <div>
+        <strong>Need to make changes?</strong> Use the "Previous" button to go back and edit any section.
+      </div>
+    </div>
+
+    <div class="form-check mt-4">
+      <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+      <label class="form-check-label" for="agreeTerms">
+        I agree to the <a href="#" class="text-decoration-underline">Terms and Conditions</a> and <a href="#" class="text-decoration-underline">Privacy Policy</a>
+      </label>
+    </div>
+  </div>
+</div>
+
+
 
           <!-- Navigation Buttons -->
           <div class="d-flex justify-content-between mt-5">
@@ -792,87 +891,87 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
 
+ <footer id="footer" class="footer dark-background">
+
+  <div class="container">
+    <div class="row gy-5">
+
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <a href="/" class="logo d-flex align-items-center mb-3">
+            <span class="sitename">Munene and Sons Transporters</span>
+          </a>
+          <p class="tagline">Making relocations seamless, safe, and stress-free with professional moving services.</p>
+
+          <div class="social-links mt-4">
+            <a href="https://web.facebook.com/p/Munene-Sons-Transporters-100088968903058/?_rdc=1&_rdr# " aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            
+            <a href="https://wa.me/254711155232" target="_blank" aria-label="Whatsapp">
+                <i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/munene-murungi-21374885/ " aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@muneneandsons" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+ <div class="col-lg-6">
+  <div class="footer-links-grid">
+    <div class="row">
+      <!-- Location -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5 class="fw-bold mb-3">Location</h5>
+        <ul class="list-unstyled">
+          <li>Thika, Kenya</li>
+          <li>Opposite Christian Outreach</li>
+          <li>Kwiz Cyber Building</li>
+          <li><strong>Phone:</strong> +254 768 002 702</li>
+          <li><strong>Email:</strong> support@muneneandsonstransporters.co.ke</li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="/service" class="text-decoration-none text-light">Residential Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Commercial Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Packing & Storage</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">House & Hunting</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Long-Distance Relocation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div class="col-lg-2">
+        <div class="footer-cta">
+          <h5>Let's Connect</h5>
+          <a href="/contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
     <div class="container">
-      <div class="row gy-5">
-
-        <div class="col-lg-4">
-          <div class="footer-brand">
-            <a href="/" class="logo d-flex align-items-center mb-3">
-              <span class="sitename">Munene and Sons</span>
-            </a>
-            <p class="tagline">Making relocations seamless, safe, and stress-free with professional moving services.</p>
-
-            <div class="social-links mt-4">
-              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="footer-links-grid">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <h5>Company</h5>
-                <ul class="list-unstyled">
-                  <li><a href="/about">About Us</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">News & Updates</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-4">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                  <li><a href="/service">Residential Moves</a></li>
-                  <li><a href="/service">Commercial Moves</a></li>
-                  <li><a href="/service">Packing & Storage</a></li>
-                  <li><a href="/service">Long-Distance Relocation</a></li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-4">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="/contact">Contact Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2">
-          <div class="footer-cta">
-            <h5>Let's Connect</h5>
-            <a href="/contact" class="btn btn-outline">Get in Touch</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="footer-bottom-content">
-              <p class="mb-0">© <span class="sitename">Munene and Sons</span>. All rights reserved.</p>
-              <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-bottom-content">
+            <p class="mb-0">© <span class="sitename">Munene and Sons Transporters</span>. All rights reserved.</p>
+            <div class="credits">
+              Designed by <a href="https://artechullatesoluutions.co.ke">Artechulate Solutions</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-  </footer>
+</footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -908,33 +1007,122 @@
   const form = document.querySelector('form'); // Assuming your form is the first <form>
 
   function showStep(step) {
-    // Hide all steps
-    document.querySelectorAll('.form-step').forEach(el => {
-      el.classList.remove('active');
-    });
+  // Hide all steps
+  document.querySelectorAll('.form-step').forEach(el => {
+    el.classList.remove('active');
+  });
 
-    // Show current step
-    document.querySelector(`.form-step[data-step="${step}"]`).classList.add('active');
+  // Show current step
+  document.querySelector(`.form-step[data-step="${step}"]`).classList.add('active');
 
-    // Update step indicators
-    document.querySelectorAll('.step').forEach((el, index) => {
-      const stepNum = index + 1;
-      el.classList.remove('active', 'completed');
+  // Update step indicators
+  document.querySelectorAll('.step').forEach((el, index) => {
+    const stepNum = index + 1;
+    el.classList.remove('active', 'completed');
 
-      if (stepNum < step) {
-        el.classList.add('completed');
-      } else if (stepNum === step) {
-        el.classList.add('active');
-      }
-    });
+    if (stepNum < step) {
+      el.classList.add('completed');
+    } else if (stepNum === step) {
+      el.classList.add('active');
+    }
+  });
 
-    // Update buttons
-    prevBtn.style.display = step === 1 ? 'none' : 'inline-block';
-    nextBtn.style.display = step === totalSteps ? 'none' : 'inline-block';
-    submitBtn.style.display = step === totalSteps ? 'inline-block' : 'none';
+  // Update buttons
+  prevBtn.style.display = step === 1 ? 'none' : 'inline-block';
+  nextBtn.style.display = step === totalSteps ? 'none' : 'inline-block';
+  submitBtn.style.display = step === totalSteps ? 'inline-block' : 'none';
 
-    
+  // Populate review on final step
+  if (step === totalSteps) {
+    populateReview();
   }
+}
+
+
+function populateReview() {
+  // Contact Information
+  document.getElementById('review-name').textContent = document.querySelector('[name="full_name"]').value || '-';
+  document.getElementById('review-phone').textContent = document.querySelector('[name="phone"]').value || '-';
+  document.getElementById('review-email').textContent = document.querySelector('[name="email"]').value || '-';
+  const contactMethod = document.querySelector('[name="preferred_contact"]').value;
+  document.getElementById('review-contact').textContent = contactMethod.charAt(0).toUpperCase() + contactMethod.slice(1);
+
+  // Move Details
+  const originTown = document.querySelector('[name="origin_address"]').value || '';
+  const originCounty = document.querySelector('[name="origin_city"]').value || '';
+  document.getElementById('review-origin').textContent = `${originTown}, ${originCounty}` || '-';
+  
+  const destTown = document.querySelector('[name="destination_address"]').value || '';
+  const destCounty = document.querySelector('[name="destination_city"]').value || '';
+  document.getElementById('review-destination').textContent = `${destTown}, ${destCounty}` || '-';
+  
+  document.getElementById('review-date').textContent = document.querySelector('[name="preferred_date"]').value || '-';
+  document.getElementById('review-flexible').textContent = document.querySelector('[name="date_flexible"]').checked ? 'Yes' : 'No';
+
+  // Property Details
+  const moveType = document.querySelector('[name="move_type"]:checked')?.value || '-';
+  document.getElementById('review-move-type').textContent = moveType.charAt(0).toUpperCase() + moveType.slice(1);
+  
+  const propertySize = document.querySelector('[name="property_size"]').value;
+  if (propertySize) {
+    const sizeText = document.querySelector(`[name="property_size"] option[value="${propertySize}"]`).textContent;
+    document.getElementById('review-property-size').textContent = sizeText;
+  } else {
+    document.getElementById('review-property-size').textContent = 'Not specified';
+  }
+  
+  const accessType = document.querySelector('[name="access_type"]').value;
+  if (accessType) {
+    const accessText = document.querySelector(`[name="access_type"] option[value="${accessType}"]`).textContent;
+    document.getElementById('review-access').textContent = accessText;
+  } else {
+    document.getElementById('review-access').textContent = 'Not specified';
+  }
+
+  const inventory = document.querySelector('[name="inventory_list"]').value;
+  if (inventory) {
+    document.getElementById('review-inventory-container').style.display = 'block';
+    document.getElementById('review-inventory').textContent = inventory;
+  } else {
+    document.getElementById('review-inventory-container').style.display = 'none';
+  }
+
+  // Additional Services
+  const services = [];
+  if (document.querySelector('[name="packing_service"]').checked) services.push('Professional Packing');
+  if (document.querySelector('[name="unpacking_service"]').checked) services.push('Unpacking Service');
+  if (document.querySelector('[name="storage_required"]').checked) services.push('Storage Services');
+  if (document.querySelector('[name="assembly_required"]').checked) services.push('Assembly/Disassembly');
+  if (document.querySelector('[name="fragile_items"]').checked) services.push('Fragile Items Handling');
+  if (document.querySelector('[name="heavy_items"]').checked) services.push('Heavy Items');
+  if (document.querySelector('[name="insurance_required"]').checked) services.push('Insurance Coverage');
+
+  const servicesContainer = document.getElementById('review-services');
+  if (services.length > 0) {
+    servicesContainer.innerHTML = '<div class="d-flex flex-wrap gap-2">' + 
+      services.map(s => `<span class="badge bg-primary">${s}</span>`).join('') + 
+      '</div>';
+  } else {
+    servicesContainer.innerHTML = '<small class="text-muted">No additional services selected</small>';
+  }
+
+  const instructions = document.querySelector('[name="special_instructions"]').value;
+  if (instructions) {
+    document.getElementById('review-instructions-container').style.display = 'block';
+    document.getElementById('review-instructions').textContent = instructions;
+  } else {
+    document.getElementById('review-instructions-container').style.display = 'none';
+  }
+
+  const budget = document.querySelector('[name="estimated_budget"]').value;
+  if (budget) {
+    document.getElementById('review-budget-container').style.display = 'block';
+    document.getElementById('review-budget').textContent = 'KES ' + Number(budget).toLocaleString();
+  } else {
+    document.getElementById('review-budget-container').style.display = 'none';
+  }
+}
+
 
   function validateStep(step) {
     const currentStepEl = document.querySelector(`.form-step[data-step="${step}"]`);

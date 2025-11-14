@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/favi.png" rel="icon">
   <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -51,7 +51,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted d-none d-sm-block" href="quote.html">Request Quote</a>
+      <a class="btn-getstarted d-none d-sm-block" href="/quote">Request Quote</a>
 
     </div>
   </header>
@@ -168,7 +168,7 @@
       <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
         <div class="image-section">
           <div class="main-image">
-            <img src="assets/img/movers/boxes.jpg" alt="Contact KenyaMovers" class="img-fluid">
+            <img src="assets/img/movers/long-dist.jpg" alt="Contact KenyaMovers" class="img-fluid">
           </div>
           <div class="floating-badge" data-aos="zoom-in" data-aos-delay="500">
             <div class="badge-content">
@@ -209,10 +209,8 @@
         </div>
         <h3>Phone</h3>
         <p>Call us anytime for immediate assistance. Our team is available 24/7 to answer your questions and schedule moves.</p>
-        <a href="tel:+254712345678" class="service-cta">
-          <span>+254 712 345 678</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        <p>+254768002702</p>
+        
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="200">
@@ -222,10 +220,8 @@
         </div>
         <h3>Email</h3>
         <p>Send us an email with your inquiry or quote request. We typically respond within one hour during business hours.</p>
-        <a href="mailto:info@kenyamovers.co.ke" class="service-cta">
-          <span>info@kenyamovers.co.ke</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+           <p>support@muneneandsonstransporters.co.ke</p>
+       
       </div>
 
       <div class="service-item featured" data-aos="fade-up" data-aos-delay="250">
@@ -234,51 +230,36 @@
         <div class="service-icon">
           <i class="bi bi-geo-alt"></i>
         </div>
-        <h3>Nairobi Office</h3>
+        <h3>Thika Office</h3>
         <p>Visit our main office for in-person consultations. Open Monday-Saturday, 8:00 AM - 6:00 PM.</p>
-        <a href="#" class="service-cta">
-          <span>Mombasa Road, Nairobi</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        <p>opposite Christian Outreach Kwiz Cyber.</p>
+        
       </div>
 
-      <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-number">04</div>
-        <div class="service-icon">
-          <i class="bi bi-geo-alt"></i>
-        </div>
-        <h3>Mombasa Office</h3>
-        <p>Our coastal branch serving Mombasa and surrounding areas. Full-service moving support available.</p>
-        <a href="#" class="service-cta">
-          <span>Nyerere Avenue, Mombasa</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
-      </div>
+      
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="350">
-        <div class="service-number">05</div>
+        <div class="service-number">04</div>
         <div class="service-icon">
           <i class="bi bi-whatsapp"></i>
         </div>
         <h3>WhatsApp</h3>
         <p>Message us on WhatsApp for quick responses and easy communication. Share photos and get instant quotes.</p>
-        <a href="https://wa.me/254712345678" class="service-cta">
+        <a href="https://wa.me/25471155232" class="service-cta">
           <span>Chat on WhatsApp</span>
           <i class="bi bi-arrow-right"></i>
         </a>
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-number">06</div>
+        <div class="service-number">05</div>
         <div class="service-icon">
           <i class="bi bi-clock"></i>
         </div>
         <h3>Business Hours</h3>
-        <p>Mon-Fri: 7:00 AM - 7:00 PM | Sat: 8:00 AM - 6:00 PM | Sun: 9:00 AM - 5:00 PM | 24/7 Emergency Support</p>
-        <a href="#" class="service-cta">
-          <span>View Schedule</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        <p>Mon-Sat: 8:00 AM - 5:00 PM | 24/7 Emergency Support</p>
+       
+        
       </div>
 
     </div>
@@ -465,11 +446,11 @@
           <div class="certification-badge">
             <img src="assets/img/construction/badge-1.webp" alt="Nairobi Office" class="img-fluid">
           </div>
-          <h4>Nairobi Main Office</h4>
-          <p><strong>Address:</strong> Mombasa Road, Industrial Area, Nairobi</p>
-          <p><strong>Phone:</strong> +254 712 345 678</p>
-          <p><strong>Email:</strong> nairobi@kenyamovers.co.ke</p>
-          <p><strong>Hours:</strong> Mon-Sat: 8:00 AM - 6:00 PM</p>
+          <h4>Thika Main Office</h4>
+          <p><strong>Address:</strong> Thika, opposite Christian Outreach Kwiz Cyber</p>
+          <p><strong>Phone:</strong> +254768002702</p>
+          <p><strong>Email:</strong> support@muneneandsontransporters.co.ke</p>
+          <p><strong>Hours:</strong> Mon-Sat: 8:00 AM - 5:00 PM</p>
         </div>
       </div>
 
@@ -479,9 +460,9 @@
             <img src="assets/img/construction/badge-2.webp" alt="Mombasa Office" class="img-fluid">
           </div>
           <h4>Customer Service Desk</h4>
-              <p><strong>Phone:</strong> +254 700 000 000</p>
-              <p><strong>Email:</strong> help@kenyamovers.co.ke</p>
-              <p><strong>Hours:</strong> Mon-Sun: 8:00 AM - 8:00 PM</p>
+              <p><strong>Phone:</strong> +254768002702</p>
+              <p><strong>Email:</strong> support@muneneandsonstransporters.co.ke</p>
+              <p><strong>Hours:</strong> Mon-Sun: 8:00 AM - 6:00 PM</p>
               <p><em>Fastest support for quotes and inquiries!</em></p>
 
         </div>
@@ -495,7 +476,7 @@
           <div class="row text-center">
             <div class="col-lg-3 col-md-6 mb-4">
               <div class="stat-item">
-                <h3>2</h3>
+                <h3>1</h3>
                 <p>Office Locations</p>
               </div>
             </div>
@@ -622,8 +603,8 @@
                 <i class="bi bi-geo-alt"></i>
               </div>
               <div class="achievement-info">
-                <h3>2</h3>
-                <span>Office Locations</span>
+                <h3>1</h3>
+                <span>Office Location</span>
               </div>
             </div>
 
@@ -647,11 +628,11 @@
               <p>Let's discuss your moving needs and create a customized plan. Our team is ready to provide professional service.</p>
 
               <div class="action-buttons">
-                <a href="quote.html" class="btn-primary">
+                <a href="/quote" class="btn-primary">
                   <span>Request Quote</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
-                <a href="tel:+254712345678" class="btn-secondary">
+                <a href="tel:+254768002702" class="btn-secondary">
                   <span>Call Now</span>
                   <i class="bi bi-telephone"></i>
                 </a>
@@ -663,7 +644,7 @@
                 <i class="bi bi-telephone-fill"></i>
                 <div class="contact-details">
                   <span class="contact-label">Direct Line</span>
-                  <span class="contact-value">+254 712 345 678</span>
+                  <span class="contact-value">+254768002702</span>
                 </div>
               </div>
 
@@ -671,7 +652,7 @@
                 <i class="bi bi-envelope-fill"></i>
                 <div class="contact-details">
                   <span class="contact-label">Email Us</span>
-                  <span class="contact-value">info@kenyamovers.co.ke</span>
+                  <span class="contact-value">support@muneneandsonstransporters.co.ke</span>
                 </div>
               </div>
             </div>
@@ -697,52 +678,51 @@
       <div class="col-lg-4">
         <div class="footer-brand">
           <a href="/" class="logo d-flex align-items-center mb-3">
-            <span class="sitename">KenyaMovers</span>
+            <span class="sitename">Munene and Sons Transporters</span>
           </a>
           <p class="tagline">Making relocations seamless, safe, and stress-free with professional moving services.</p>
 
           <div class="social-links mt-4">
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/p/Munene-Sons-Transporters-100088968903058/?_rdc=1&_rdr# " aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            
+            <a href="https://wa.me/254711155232" target="_blank" aria-label="Whatsapp">
+                <i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/munene-murungi-21374885/ " aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@muneneandsons" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="footer-links-grid">
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <h5>Company</h5>
-              <ul class="list-unstyled">
-                <li><a href="/about">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">News & Updates</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Services</h5>
-              <ul class="list-unstyled">
-                <li><a href="/service">Residential Moves</a></li>
-                <li><a href="/service">Commercial Moves</a></li>
-                <li><a href="/service">Packing & Storage</a></li>
-                <li><a href="/service">Long-Distance Relocation</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Support</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Help Center</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+ <div class="col-lg-6">
+  <div class="footer-links-grid">
+    <div class="row">
+      <!-- Location -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5 class="fw-bold mb-3">Location</h5>
+        <ul class="list-unstyled">
+          <li>Thika, Kenya</li>
+          <li>Opposite Christian Outreach</li>
+          <li>Kwiz Cyber Building</li>
+          <li><strong>Phone:</strong> +254 768 002 702</li>
+          <li><strong>Email:</strong> support@muneneandsonstransporters.co.ke</li>
+        </ul>
       </div>
+
+      <!-- Services -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="/service" class="text-decoration-none text-light">Residential Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Commercial Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Packing & Storage</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">House & Hunting</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Long-Distance Relocation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <div class="col-lg-2">
         <div class="footer-cta">
@@ -759,9 +739,9 @@
       <div class="row">
         <div class="col-12">
           <div class="footer-bottom-content">
-            <p class="mb-0">© <span class="sitename">KenyaMovers</span>. All rights reserved.</p>
+            <p class="mb-0">© <span class="sitename">Munene and Sons Transporters</span>. All rights reserved.</p>
             <div class="credits">
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="https://artechullatesoluutions.co.ke">Artechulate Solutions</a>
             </div>
           </div>
         </div>

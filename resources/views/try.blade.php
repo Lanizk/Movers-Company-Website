@@ -3,302 +3,676 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GraceCare Hospital - Compassionate Care, Modern Medicine</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>St Peters Hospital - Leading Cancer Care & Comprehensive Treatment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #0052a3;
+            --accent-color: #00a86b;
+            --dark-color: #1a1a2e;
+            --light-bg: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f9fafa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
         }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes scaleIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        
-        .animate-fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        
-        .animate-fade-in {
-            animation: fadeIn 1s ease-out forwards;
-        }
-        
-        .animate-scale-in {
-            animation: scaleIn 1.2s ease-out forwards;
-        }
-        
-        .animate-delay-200 {
-            animation-delay: 0.2s;
-            opacity: 0;
-        }
-        
-        .animate-delay-400 {
-            animation-delay: 0.4s;
-            opacity: 0;
-        }
-        
-        .animate-delay-600 {
-            animation-delay: 0.6s;
-            opacity: 0;
-        }
-        
-        .animate-delay-800 {
-            animation-delay: 0.8s;
-            opacity: 0;
-        }
-        
-        .hover-lift {
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
             transition: all 0.3s ease;
         }
-        
-        .hover-lift:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color) !important;
         }
-        
-        .btn-pulse:hover {
-            animation: pulse 1s infinite;
+
+        .nav-link {
+            font-weight: 500;
+            margin: 0 15px;
+            color: var(--dark-color) !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .btn-appointment {
+            background: var(--accent-color);
+            color: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-appointment:hover {
+            background: #008c5a;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 168, 107, 0.3);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-content .highlight {
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-image-placeholder {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-primary-custom {
+            background: var(--accent-color);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+            margin-right: 15px;
+        }
+
+        .btn-primary-custom:hover {
+            background: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-secondary-custom {
+            background: transparent;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 2px solid white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary-custom:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Cancer Care Highlight Section */
+        .cancer-care-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 80px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cancer-care-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .cancer-care-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cancer-care-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .cancer-care-card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .cancer-care-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 100px 0;
+            background: var(--light-bg);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title .underline {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            margin: 0 auto 20px;
+            border-radius: 2px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            height: 100%;
+            border: none;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .service-card h4 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: var(--primary-color);
+            padding: 80px 0;
+            color: white;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-section {
+            padding: 100px 0;
+        }
+
+        .feature-box {
+            display: flex;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-color), #ff8e53);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 25px;
+            flex-shrink: 0;
+        }
+
+        .feature-content h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        .image-placeholder {
+            background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
+            border-radius: 20px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px dashed #ccc;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-section h5 {
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--secondary-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
-<body class="text-gray-800">
-    
-    <!-- Header / Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-[#023047]">
-                    GraceCare <span class="text-[#0077b6]">Hospital</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-[#0077b6] transition-colors duration-300">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-[#0077b6] transition-colors duration-300">About Us</a>
-                    <a href="#services" class="text-gray-700 hover:text-[#0077b6] transition-colors duration-300">Departments</a>
-                    <a href="#doctors" class="text-gray-700 hover:text-[#0077b6] transition-colors duration-300">Doctors</a>
-                    <a href="#contact" class="text-gray-700 hover:text-[#0077b6] transition-colors duration-300">Contact</a>
-                </div>
-                <button class="bg-[#34d399] text-white px-6 py-2 rounded-full hover:bg-[#2bb380] transition-all duration-300 hover:shadow-lg">
-                    Book Now
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-gradient-to-br from-[#0077b6] to-[#023047] text-white overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-20"></div>
-        <div class="container mx-auto px-6 py-32 relative z-10">
-            <div class="max-w-3xl animate-fade-in-up">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                    Compassionate Care, Modern Medicine
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 text-gray-100 animate-fade-in-up animate-delay-200">
-                    We're committed to healing with heart and expertise. Discover a hospital experience built around you.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-400">
-                    <button class="bg-[#34d399] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#2bb380] transition-all duration-300 btn-pulse shadow-lg">
-                        Book Appointment
-                    </button>
-                    <button class="bg-white text-[#0077b6] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg">
-                        Our Services
-                    </button>
-                </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-hospital-symbol"></i> St Peters Hospital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-appointment">Book Appointment</button>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#f9fafa] to-transparent"></div>
-        <!-- Photo Placeholder -->
-        <div class="absolute top-0 right-0 w-1/2 h-full bg-gray-300 opacity-10 animate-scale-in">
-            <div class="flex items-center justify-center h-full text-white text-2xl">
-                Hero Image Placeholder
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Advanced <span class="highlight">Cancer Care</span> With Compassion</h1>
+                    <p>Leading the way in comprehensive cancer treatment and holistic healthcare. Your journey to recovery starts here.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary-custom">Our Cancer Center</button>
+                        <button class="btn btn-secondary-custom">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-placeholder">
+                        <div class="text-center">
+                            <i class="fas fa-image" style="font-size: 4rem; opacity: 0.5;"></i>
+                            <p style="margin-top: 20px; opacity: 0.7;">Hero Image Placeholder<br>1200x800px</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Preview Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1 animate-fade-in-up">
-                    <div class="bg-gray-200 h-[400px] rounded-2xl flex items-center justify-center text-gray-500 text-xl overflow-hidden hover:scale-105 transition-transform duration-700">
-                        Doctor & Patient Photo Placeholder
+    <!-- Cancer Care Highlight Section -->
+    <section class="cancer-care-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 20px;">World-Class Cancer Treatment Center</h2>
+                <p style="font-size: 1.2rem; opacity: 0.95;">Comprehensive, compassionate, and cutting-edge cancer care</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="cancer-care-card text-center">
+                        <i class="fas fa-microscope"></i>
+                        <h3>Advanced Diagnostics</h3>
+                        <p>State-of-the-art imaging and laboratory services for accurate cancer detection and staging</p>
                     </div>
                 </div>
-                <div class="order-1 md:order-2 animate-fade-in-up animate-delay-200">
-                    <h2 class="text-4xl font-bold text-[#023047] mb-6">
-                        Where Technology Meets Compassion
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        At GraceCare Hospital, we believe healing begins with understanding. Our team combines cutting-edge medical technology with genuine human connection to provide care that treats not just symptoms, but the whole person.
-                    </p>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Every patient's journey is unique, and we're here to walk alongside you with expertise, empathy, and unwavering support.
-                    </p>
-                    <button class="bg-[#0077b6] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#005a8c] transition-all duration-300 hover:shadow-lg">
-                        Learn More About Us
-                    </button>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cancer-care-card text-center">
+                        <i class="fas fa-radiation"></i>
+                        <h3>Radiation Therapy</h3>
+                        <p>Precision radiation oncology with the latest technology for targeted treatment</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cancer-care-card text-center">
+                        <i class="fas fa-pills"></i>
+                        <h3>Chemotherapy</h3>
+                        <p>Personalized chemotherapy protocols delivered by expert oncologists</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="cancer-care-card text-center">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Supportive Care</h3>
+                        <p>Comprehensive support services including nutrition, pain management, and counseling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-primary-custom" style="background: white; color: #f5576c;">Explore Our Cancer Center</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">15,000+</div>
+                        <div class="stat-label">Patients Treated</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Medical Experts</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-[#f9fafa]">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <h2 class="text-4xl font-bold text-[#023047] mb-4">Our Departments</h2>
-                <p class="text-xl text-gray-600">Comprehensive healthcare services tailored to your needs</p>
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Comprehensive Services</h2>
+                <div class="underline"></div>
+                <p style="color: #666; font-size: 1.1rem;">Complete healthcare solutions under one roof</p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up">
-                    <div class="bg-[#90e0ef] h-16 w-16 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-[#023047]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h4>General Medicine</h4>
+                        <p>Comprehensive medical care for all ages with experienced physicians</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#023047] mb-3">Cardiology</h3>
-                    <p class="text-gray-600 leading-relaxed">Advanced heart care with state-of-the-art diagnostic and treatment options for all cardiac conditions.</p>
                 </div>
-                
-                <!-- Service Card 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up animate-delay-200">
-                    <div class="bg-[#34d399] h-16 w-16 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                        </svg>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Specialized Surgery</h4>
+                        <p>Advanced surgical procedures with state-of-the-art operating theaters</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#023047] mb-3">Emergency Care</h3>
-                    <p class="text-gray-600 leading-relaxed">24/7 emergency services with rapid response teams ready to provide critical care when you need it most.</p>
                 </div>
-                
-                <!-- Service Card 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up animate-delay-400">
-                    <div class="bg-[#ffb5a7] h-16 w-16 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-[#023047]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                        </svg>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Cardiology</h4>
+                        <p>Complete heart care from prevention to advanced cardiac interventions</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#023047] mb-3">Pediatrics</h3>
-                    <p class="text-gray-600 leading-relaxed">Specialized care for children in a warm, friendly environment designed to make young patients feel safe.</p>
                 </div>
-                
-                <!-- Service Card 4 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up animate-delay-600">
-                    <div class="bg-[#90e0ef] h-16 w-16 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-[#023047]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                        </svg>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Neurology</h4>
+                        <p>Expert neurological care for brain and nervous system conditions</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#023047] mb-3">Laboratory</h3>
-                    <p class="text-gray-600 leading-relaxed">Precision diagnostics with cutting-edge lab technology ensuring accurate results and faster treatment.</p>
                 </div>
-                
-                <!-- Service Card 5 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up animate-delay-800">
-                    <div class="bg-[#34d399] h-16 w-16 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                        </svg>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h4>Radiology</h4>
+                        <p>Advanced imaging services with the latest diagnostic technology</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#023047] mb-3">Surgery</h3>
-                    <p class="text-gray-600 leading-relaxed">World-class surgical expertise with minimally invasive techniques and compassionate post-operative care.</p>
                 </div>
-                
-                <!-- Service Card 6 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up animate-delay-800">
-                    <div class="bg-[#ffb5a7] h-16 w-16 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-[#023047]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h4>Emergency Care</h4>
+                        <p>24/7 emergency services with rapid response teams</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#023047] mb-3">Mental Health</h3>
-                    <p class="text-gray-600 leading-relaxed">Comprehensive mental health support in a safe, judgment-free environment with expert therapists.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Doctors Section -->
-    <section id="doctors" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <h2 class="text-4xl font-bold text-[#023047] mb-4">Meet Our Specialists</h2>
-                <p class="text-xl text-gray-600">Expert physicians dedicated to your wellbeing</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Doctor Card 1 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift animate-fade-in-up">
-                    <div class="bg-gray-200 h-64 flex items-center justify-center text-gray-500">
-                        Doctor Photo Placeholder
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-start">
+                        <h2>Why Choose St Peters Hospital?</h2>
+                        <div class="underline" style="margin: 0 0 20px 0;"></div>
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-2xl font-bold text-[#023047] mb-2">Dr. Sarah Mitchell</h3>
-                        <p class="text-[#0077b6] font-semibold mb-4">Chief Cardiologist</p>
-                        <div class="flex justify-center space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-[#0077b6] transition-colors duration-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            </a>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Accredited Excellence</h4>
+                            <p>Internationally accredited facility with the highest standards of healthcare quality and patient safety.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Expert Medical Team</h4>
+                            <p>Our multidisciplinary team includes board-certified specialists with decades of combined experience.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Modern Facilities</h4>
+                            <p>Equipped with cutting-edge medical technology and comfortable patient-centered environments.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Compassionate Care</h4>
+                            <p>We treat every patient with dignity, respect, and personalized attention throughout their journey.</p>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Doctor Card 2 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift animate-fade-in-up animate-delay-200">
-                    <div class="bg-gray-200 h-64 flex items-center justify-center text-gray-500">
-                        Doctor Photo Placeholder
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-2xl font-bold text-[#023047] mb-2">Dr. James Chen</h3>
-                        <p class="text-[#0077b6] font-semibold mb-4">Pediatric Surgeon</p>
-                        <div class="flex justify-center space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-[#0077b6] transition-colors duration-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Doctor Card 3 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-lift animate-fade-in-up animate-delay-400">
-                    <div class="bg-gray-200 h-64 flex items-center justify-center text-gray-500">
-                        Doctor Photo Placeholder
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-2xl font-bold text-[#023047] mb-2">Dr. Emily Rodriguez</h3>
-                        <p class="text-[#0077b6] font-semibold mb-4">Neurologist</p>
-                        <div class="flex justify-center space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-[#0077b6] transition-colors duration-300">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            </a>
+                <div class="col-lg-6">
+                    <div class="image-placeholder">
+                        <div class="text-center">
+                            <i class="fas fa-image" style="font-size: 4rem; color: #999;"></i>
+                            <p style="margin-top: 20px; color: #666;">Hospital Facility Image<br>900x600px</p>
                         </div>
                     </div>
                 </div>
@@ -306,162 +680,71 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-20 bg-[#f9fafa]">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 animate-fade-in-up">
-                <h2 class="text-4xl font-bold text-[#023047] mb-4">What Our Patients Say</h2>
-                <p class="text-xl text-gray-600">Real stories from the people we care for</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-gray-200 h-16 w-16 rounded-full flex items-center justify-center text-gray-500 text-xs mr-4">
-                            Photo
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-[#023047]">Maria Thompson</h4>
-                            <p class="text-sm text-gray-500">Heart Surgery Patient</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic leading-relaxed">
-                        "The care I received was extraordinary. Every nurse, every doctor treated me like family. I felt safe, heard, and genuinely cared for throughout my entire journey."
-                    </p>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up animate-delay-200">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-gray-200 h-16 w-16 rounded-full flex items-center justify-center text-gray-500 text-xs mr-4">
-                            Photo
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-[#023047]">Robert Johnson</h4>
-                            <p class="text-sm text-gray-500">Emergency Care</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic leading-relaxed">
-                        "When my son had an emergency, GraceCare responded immediately. The speed and professionalism of the team saved his life. We're forever grateful."
-                    </p>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover-lift animate-fade-in-up animate-delay-400">
-                    <div class="flex items-center mb-6">
-                        <div class="bg-gray-200 h-16 w-16 rounded-full flex items-center justify-center text-gray-500 text-xs mr-4">
-                            Photo
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-[#023047]">Linda Parker</h4>
-                            <p class="text-sm text-gray-500">Maternity Ward</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic leading-relaxed">
-                        "Bringing my daughter into the world at GraceCare was magical. The staff made what could have been scary feel beautiful and empowering. Thank you for everything."
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Banner -->
-    <section class="relative py-24 bg-gradient-to-r from-[#0077b6] to-[#023047] text-white overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div class="bg-gray-300 h-full w-full flex items-center justify-center text-white text-2xl">
-                Consultation Background
-            </div>
-        </div>
-        <div class="container mx-auto px-6 relative z-10 text-center animate-fade-in-up">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Your Health, Our Priority</h2>
-            <p class="text-xl md:text-2xl mb-8 text-gray-100">
-                Book your appointment today and experience care that feels personal
-            </p>
-            <button class="bg-[#34d399] text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-[#2bb380] transition-all duration-300 btn-pulse shadow-2xl">
-                Book Appointment Now
-            </button>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Begin Your Healthcare Journey?</h2>
+            <p>Schedule a consultation with our specialists today</p>
+            <button class="btn btn-primary-custom" style="background: white; color: #667eea; font-size: 1.2rem; padding: 18px 50px;">Book Your Appointment</button>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-[#023047] text-white py-16">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-12 mb-12">
-                <!-- About Column -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">GraceCare Hospital</h3>
-                    <p class="text-gray-300 leading-relaxed">
-                        Providing compassionate, world-class healthcare to our community since 1985.
-                    </p>
-                </div>
-                
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#about" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">About Us</a></li>
-                        <li><a href="#services" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">Departments</a></li>
-                        <li><a href="#doctors" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">Our Doctors</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">Careers</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact Info -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>123 Healthcare Drive</li>
-                        <li>Medical District, MC 12345</li>
-                        <li class="pt-2">Phone: (555) 123-4567</li>
-                        <li>Email: info@gracecare.com</li>
-                    </ul>
-                </div>
-                
-                <!-- Newsletter -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
-                    <p class="text-gray-300 mb-4">Stay updated with health tips and news</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-full text-gray-800 focus:outline-none">
-                        <button class="bg-[#34d399] px-6 py-2 rounded-r-full hover:bg-[#2bb380] transition-colors duration-300">
-                            Subscribe
-                        </button>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-section">
+                    <h5><i class="fas fa-hospital-symbol"></i> St Peters Hospital</h5>
+                    <p style="color: rgba(255, 255, 255, 0.7);">Providing world-class healthcare with compassion and excellence. Your health is our priority.</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                </div>
+                <div class="col-lg-2 col-md-6 footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Cancer Treatment</a></li>
+                        <li><a href="#">General Medicine</a></li>
+                        <li><a href="#">Surgery</a></li>
+                        <li><a href="#">Emergency Care</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h5>Contact Info</h5>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="color: rgba(255, 255, 255, 0.7); margin-bottom: 15px;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
+                            123 Medical Drive, Healthcare City
+                        </li>
+                        <li style="color: rgba(255, 255, 255, 0.7); margin-bottom: 15px;">
+                            <i class="fas fa-phone" style="margin-right: 10px;"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li style="color: rgba(255, 255, 255, 0.7);">
+                            <i class="fas fa-envelope" style="margin-right: 10px;"></i>
+                            info@stpetershospital.com
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
-            <!-- Social Media & Copyright -->
-            <div class="border-t border-gray-700 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="flex space-x-6 mb-4 md:mb-0">
-                        <a href="#" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-[#34d399] transition-colors duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <p class="text-gray-400 text-sm">
-                        © 2025 GraceCare Hospital. All rights reserved.
-                    </p>
-                </div>
+            <div class="copyright">
+                <p>&copy; 2025 St Peters Hospital. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Munene and Sons</title>
+  <title>Services - Munene and Sons Transporters</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
+  <!-- <link href="/assets/img/favicon.png" rel="icon"> -->
   <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -38,7 +38,7 @@
       <a href="/" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Munene and Sons</h1>
+        <h1 class="sitename">Munene and Sons Transporters</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -51,7 +51,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted d-none d-sm-block" href="quote.html">Request Quote</a>
+      <a class="btn-getstarted d-none d-sm-block" href="/quote">Request Quote</a>
 
     </div>
   </header>
@@ -82,7 +82,7 @@
             </p>
 
             <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-              <a href="quote.htm" class="btn btn-primary">Get Free Quote</a>
+              <a href="/quote" class="btn btn-primary">Get Free Quote</a>
               <a href="/contact" class="btn btn-secondary">Contact Us</a>
             </div>
 
@@ -209,10 +209,7 @@
         </div>
         <h3>Residential Moving</h3>
         <p>Complete home relocation services including packing, loading, transportation, and unpacking. We handle apartments, houses, and condos with care.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="200">
@@ -222,10 +219,7 @@
         </div>
         <h3>Commercial Moving</h3>
         <p>Office and business relocation with minimal downtime. We handle equipment, furniture, documents, and electronics professionally and efficiently.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+       
       </div>
 
       <div class="service-item featured" data-aos="fade-up" data-aos-delay="250">
@@ -236,7 +230,7 @@
         </div>
         <h3>Packing & Unpacking</h3>
         <p>Professional packing services using quality materials. We pack, label, transport, and unpack your belongings with meticulous attention to detail.</p>
-        <a href="quote.html" class="service-cta">
+        <a href="/quote" class="service-cta">
           <span>Get Quote</span>
           <i class="bi bi-arrow-right"></i>
         </a>
@@ -249,10 +243,7 @@
         </div>
         <h3>Specialty Item Moving</h3>
         <p>Expert handling of pianos, artwork, antiques, and fragile items. Custom crating and specialized equipment ensure safe transportation.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="350">
@@ -262,24 +253,18 @@
         </div>
         <h3>Long Distance Moving</h3>
         <p>Interstate and cross-country relocations with full tracking and insurance. Timely delivery and complete accountability for your belongings.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-number">06</div>
-        <div class="service-icon">
-          <i class="bi bi-archive"></i>
-        </div>
-        <h3>Storage Solutions</h3>
-        <p>Secure short-term and long-term storage in climate-controlled facilities. Professional inventory management and 24/7 security monitoring.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
-      </div>
+  <div class="service-number">06</div>
+  <div class="service-icon">
+    <i class="bi bi-house-door"></i>
+  </div>
+  <h3>House Hunting Assistance</h3>
+  <p>We help you find the ideal home based on your needs, budget, and preferred location. From viewing arrangements to negotiations, we ensure a smooth and stress-free house hunting experience.</p>
+</div>
+
 
     </div>
 
@@ -304,10 +289,7 @@
           <div class="service-content">
             <h3>Residential Moving Services</h3>
             <p>Complete home relocation from start to finish. We pack your belongings, load them safely, transport with care, and unpack at your new location.</p>
-            <a href="#" class="service-link">
-              <span>View Details</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+           
           </div>
         </div>
       </div><!-- End Move 1 -->
@@ -320,10 +302,7 @@
           <div class="service-content">
             <h3>Commercial Moving Services</h3>
             <p>Business and office relocations with strategic planning. Minimal disruption to operations, secure handling of equipment, and organized setup.</p>
-            <a href="#" class="service-link">
-              <span>View Details</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+           
           </div>
         </div>
       </div><!-- End Move 2 -->
@@ -336,29 +315,23 @@
           <div class="service-content">
             <h3>Professional Packing Services</h3>
             <p>Expert packing using high-quality materials. We protect fragile items, organize belongings systematically, and label everything for easy unpacking.</p>
-            <a href="#" class="service-link">
-              <span>View Details</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+           
           </div>
         </div>
       </div><!-- End Move 3 -->
 
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
-        <div class="service-item">
-          <div class="service-visual">
-            <img src="assets/img/services/secure-storage.jpg" alt="Storage Solutions" class="img-fluid">
-          </div>
-          <div class="service-content">
-            <h3>Secure Storage Solutions</h3>
-            <p>Climate-controlled storage facilities with 24/7 security. Flexible rental terms for both short-term and long-term storage needs.</p>
-            <a href="#" class="service-link">
-              <span>View Details</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div><!-- End Move 4 -->
+  <div class="service-item">
+    <div class="service-visual">
+      <img src="assets/img/services/house-hunting.jpg" alt="House Hunting Assistance" class="img-fluid">
+    </div>
+    <div class="service-content">
+      <h3>Professional House Hunting</h3>
+      <p>We help you find the perfect home based on your preferences and budget. From apartment scouting to property evaluations, we ensure a smooth, stress-free house hunting experience.</p>
+    </div>
+  </div>
+</div>
+<!-- End Move 4 -->
 
     </div>
 
@@ -391,13 +364,13 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
               <div class="stat-item">
-                <h3>1200+</h3>
+                <h3>500+</h3>
                 <p>Successful Projects</p>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
               <div class="stat-item">
-                <h3>30+</h3>
+                <h3>10+</h3>
                 <p>Professional Movers</p>
               </div>
             </div>
@@ -437,17 +410,13 @@
           <div class="col-lg-4 col-md-6">
             <div class="team-member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="">
+                <img src="assets/img/movers/consultation.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>Step 1: Consultation</h4>
                 <span>Assessment & Planning</span>
                 <p>We assess your moving needs, provide a detailed quote, and create a customized moving plan tailored to your requirements.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-telephone"></i></a>
-                  <a href=""><i class="bi bi-calendar-check"></i></a>
-                  <a href=""><i class="bi bi-clipboard-data"></i></a>
-                </div>
+               
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -455,17 +424,13 @@
           <div class="col-lg-4 col-md-6">
             <div class="team-member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
-                <img src="assets/img/construction/team-3.webp" class="img-fluid" alt="">
+                <img src="assets/img/movers/commitment.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>Step 2: Preparation</h4>
                 <span>Packing & Organization</span>
                 <p>Our team carefully packs your belongings using quality materials, labels everything systematically, and prepares for transport.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-box-seam"></i></a>
-                  <a href=""><i class="bi bi-tags"></i></a>
-                  <a href=""><i class="bi bi-shield-check"></i></a>
-                </div>
+                
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -473,17 +438,13 @@
           <div class="col-lg-4 col-md-6">
             <div class="team-member" data-aos="fade-up" data-aos-delay="400">
               <div class="member-img">
-                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="">
+                <img src="assets/img/movers/emergency moving.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>Step 3: Delivery</h4>
                 <span>Transport & Setup</span>
                 <p>Safe transportation to your destination, careful unloading, and organized placement of items in your new location.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-truck"></i></a>
-                  <a href=""><i class="bi bi-geo-alt"></i></a>
-                  <a href=""><i class="bi bi-check-circle"></i></a>
-                </div>
+                
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -503,58 +464,57 @@
 
  <footer id="footer" class="footer dark-background">
 
-  <div class="container">
+    <div class="container">
     <div class="row gy-5">
 
       <div class="col-lg-4">
         <div class="footer-brand">
           <a href="/" class="logo d-flex align-items-center mb-3">
-            <span class="sitename">KenyaMovers</span>
+            <span class="sitename">Munene and Sons Transporters</span>
           </a>
           <p class="tagline">Making relocations seamless, safe, and stress-free with professional moving services.</p>
 
           <div class="social-links mt-4">
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/p/Munene-Sons-Transporters-100088968903058/?_rdc=1&_rdr# " aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            
+            <a href="https://wa.me/254711155232" target="_blank" aria-label="Whatsapp">
+                <i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/munene-murungi-21374885/ " aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@muneneandsons" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="footer-links-grid">
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <h5>Company</h5>
-              <ul class="list-unstyled">
-                <li><a href="/about">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">News & Updates</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Services</h5>
-              <ul class="list-unstyled">
-                <li><a href="/service">Residential Moves</a></li>
-                <li><a href="/service">Commercial Moves</a></li>
-                <li><a href="/service">Packing & Storage</a></li>
-                <li><a href="/service">Long-Distance Relocation</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Support</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Help Center</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+ <div class="col-lg-6">
+  <div class="footer-links-grid">
+    <div class="row">
+      <!-- Location -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5 class="fw-bold mb-3">Location</h5>
+        <ul class="list-unstyled">
+          <li>Thika, Kenya</li>
+          <li>Opposite Christian Outreach</li>
+          <li>Kwiz Cyber Building</li>
+          <li><strong>Phone:</strong> +254 768 002 702</li>
+          <li><strong>Email:</strong> support@muneneandsonstransporters.co.ke</li>
+        </ul>
       </div>
+
+      <!-- Services -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="/service" class="text-decoration-none text-light">Residential Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Commercial Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Packing & Storage</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">House & Hunting</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Long-Distance Relocation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <div class="col-lg-2">
         <div class="footer-cta">
@@ -571,9 +531,9 @@
       <div class="row">
         <div class="col-12">
           <div class="footer-bottom-content">
-            <p class="mb-0">© <span class="sitename">KenyaMovers</span>. All rights reserved.</p>
+            <p class="mb-0">© <span class="sitename">Munene and Sons Transporters</span>. All rights reserved.</p>
             <div class="credits">
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="https://artechullatesoluutions.co.ke">Artechulate Solutions</a>
             </div>
           </div>
         </div>

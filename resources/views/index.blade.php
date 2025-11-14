@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Munene and Sons</title>
+  <title>Munene and Sons Transporters</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
+  <!-- <link href="/assets/img/favicon.png" rel="icon"> -->
   <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -38,7 +38,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Munene and Sons</h1>
+        <h1 class="sitename">Munene and Sons Transporters</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -82,8 +82,8 @@
             </p>
 
             <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-              <a href="quote.htm" class="btn btn-primary">Request a Quote</a>
-              <a href="services.html" class="btn btn-secondary">View Our Services</a>
+              <a href="/quote" class="btn btn-primary">Request a Quote</a>
+              <a href="/service" class="btn btn-secondary">View Our Services</a>
             </div>
 
             <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
@@ -367,7 +367,7 @@
         <div class="cta-section">
           <h4>Ready to move your home or office?</h4>
           <p>Contact our team to plan your move and get a personalized quote for safe and efficient relocation.</p>
-          <a href="quote.html" class="btn-primary">
+          <a href="/quote" class="btn-primary">
             <span>Get Free Quote</span>
             <i class="bi bi-arrow-right"></i>
           </a>
@@ -618,41 +618,16 @@
           <div class="col-lg-4 col-md-6">
             <div class="team-member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="">
+                <img src="assets/img/movers/munene.png" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Munene</h4>
-                <span>CEO</span>
-                <p>Provides strategic leadership and drives the company’s vision with innovation and integrity.</p>
-
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                  
-                </div>
+                <h4>Antony Munene</h4>
+                <span>CEO & Founder</span>
+                <p>With 15 years in logistics, David founded KenyaMovers to revolutionize the moving industry through customer-centric service.</p>
+                
               </div>
             </div>
           </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="team-member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/construction/team-3.webp" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Ben Rodriguez</h4>
-                <span>Site Supervisor</span>
-                <p>Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        
 
         </div>
 
@@ -731,12 +706,12 @@
               <p>Let us take the stress out of your relocation. Our trained movers handle packing, loading, and transportation with care. Schedule your move today and enjoy a seamless experience.</p>
 
               <div class="action-buttons">
-                <a href="quote.html" class="btn-primary">
+                <a href="/quote" class="btn-primary">
                   <span>Request Quote</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
-                <a href="#" class="btn-secondary">
-                  <span>View Gallery</span>
+                <a href="/service" class="btn-secondary">
+                  <span>View Service</span>
                   <i class="bi bi-eye"></i>
                 </a>
               </div>
@@ -747,7 +722,7 @@
                 <i class="bi bi-telephone-fill"></i>
                 <div class="contact-details">
                   <span class="contact-label">Direct Line</span>
-                  <span class="contact-value">+254 711 155232</span>
+                  <span class="contact-value">+254768002702</span>
                 </div>
               </div>
 
@@ -755,7 +730,7 @@
                 <i class="bi bi-envelope-fill"></i>
                 <div class="contact-details">
                   <span class="contact-label">Email Us</span>
-                  <span class="contact-value">info@muneneandsons.co.ke</span>
+                  <span class="contact-value">support@muneneandsonstransporters.co.ke</span>
                 </div>
               </div>
             </div>
@@ -775,58 +750,58 @@
 
  <footer id="footer" class="footer dark-background">
 
-  <div class="container">
+    <div class="container">
     <div class="row gy-5">
 
       <div class="col-lg-4">
         <div class="footer-brand">
-          <a href="index.html" class="logo d-flex align-items-center mb-3">
-            <span class="sitename">Munene and Sons</span>
+          <a href="/" class="logo d-flex align-items-center mb-3">
+            <span class="sitename">Munene and Sons Transporters</span>
           </a>
           <p class="tagline">Making relocations seamless, safe, and stress-free with professional moving services.</p>
 
           <div class="social-links mt-4">
-            <a href="https://web.facebook.com/p/Munene-Sons-Transporters-100088968903058/?_rdc=1&_rdr#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.tiktok.com/@muneneandsons" aria-label="Twitter"><i class="bi bi-tiktok"></i></a>
+            <a href="https://web.facebook.com/p/Munene-Sons-Transporters-100088968903058/?_rdc=1&_rdr# " aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            
+            <a href="https://wa.me/254711155232" target="_blank" aria-label="Whatsapp">
+                <i class="bi bi-whatsapp"></i></a>
+
+            <a href="https://www.linkedin.com/in/munene-murungi-21374885/ " aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@muneneandsons" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="footer-links-grid">
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <h5>Company</h5>
-              <ul class="list-unstyled">
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/service">Services</a></li>
-                <li><a href="/contact">Contact</a></li>
-                
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Services</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Residential Moves</a></li>
-                <li><a href="#">Commercial Moves</a></li>
-                <li><a href="#">Packing & Storage</a></li>
-                <li><a href="#">Long-Distance Relocation</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Support</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+ <div class="col-lg-6">
+  <div class="footer-links-grid">
+    <div class="row">
+      <!-- Location -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5 class="fw-bold mb-3">Location</h5>
+        <ul class="list-unstyled">
+          <li>Thika, Kenya</li>
+          <li>Opposite Christian Outreach</li>
+          <li>Kwiz Cyber Building</li>
+          <li><strong>Phone:</strong> +254 768 002 702</li>
+          <li><strong>Email:</strong> support@muneneandsonstransporters.co.ke</li>
+        </ul>
       </div>
+
+      <!-- Services -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="/service" class="text-decoration-none text-light">Residential Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Commercial Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Packing & Storage</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">House & Hunting</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Long-Distance Relocation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <div class="col-lg-2">
         <div class="footer-cta">
@@ -843,9 +818,9 @@
       <div class="row">
         <div class="col-12">
           <div class="footer-bottom-content">
-            <p class="mb-0">© <span class="sitename">Munene and Sons</span>. All rights reserved.</p>
+            <p class="mb-0">© <span class="sitename">Munene and Sons Transporters</span>. All rights reserved.</p>
             <div class="credits">
-              Designed by <a href="#">Artechulate Solutions</a>
+              Designed by <a href="https://artechullatesoluutions.co.ke">Artechulate Solutions</a>
             </div>
           </div>
         </div>

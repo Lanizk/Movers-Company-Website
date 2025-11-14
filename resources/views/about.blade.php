@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Munene and Sons</title>
+  <title>About - Munene and Sons Transporters</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -38,7 +38,7 @@
       <a href="/" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Munene and Sons</h1>
+        <h1 class="sitename">Munene and Sons Transporters</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -82,7 +82,7 @@
             </p>
 
             <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-              <a href="quote.htm" class="btn btn-primary">Request a Quote</a>
+              <a href="/quote" class="btn btn-primary">Request a Quote</a>
               <a href="/contact" class="btn btn-secondary">Contact Us</a>
             </div>
 
@@ -135,7 +135,7 @@
         <div class="content">
           <h2 class="section-heading mb-4">Our Story: A Decade of Excellence</h2>
           <p class="lead-text mb-4">
-            Founded in 2014, Munene and Sons began with a simple vision: to transform the moving experience from stressful to seamless. What started as a small operation with two trucks has grown into one of Kenya's most trusted moving companies.
+            Founded in 2014, Munene and Sons Transporters began with a simple vision: to transform the moving experience from stressful to seamless. What started as a small operation with two trucks has grown into one of Kenya's most trusted moving companies.
           </p>
           <p class="description-text mb-5">
             Over the past decade, we've successfully completed over 500 relocations for families and businesses across the country. Our growth has been built on a foundation of integrity, professionalism, and unwavering commitment to customer satisfaction. Every move we handle reflects our dedication to treating your belongings as if they were our own.
@@ -168,7 +168,7 @@
       <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
         <div class="image-section">
           <div class="main-image">
-            <img src="assets/img/project-4.webp" alt="Munene and Sons history" class="img-fluid">
+            <img src="assets/img/movers/residential-move.jpg" alt="Munene and Sons history" class="img-fluid">
           </div>
           <div class="floating-badge" data-aos="zoom-in" data-aos-delay="500">
             <div class="badge-content">
@@ -209,10 +209,7 @@
         </div>
         <h3>Integrity</h3>
         <p>We operate with honesty and transparency in every interaction. Your trust is our foundation, and we honor it through consistent, reliable service.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="200">
@@ -222,10 +219,7 @@
         </div>
         <h3>Excellence</h3>
         <p>We pursue the highest standards in every move. From initial planning to final delivery, quality and attention to detail define our approach.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        
       </div>
 
       <div class="service-item featured" data-aos="fade-up" data-aos-delay="250">
@@ -236,7 +230,7 @@
         </div>
         <h3>Customer Focus</h3>
         <p>Your satisfaction drives everything we do. We listen to your needs, customize our services, and go the extra mile for a positive experience.</p>
-        <a href="quote.html" class="service-cta">
+        <a href="/quote" class="service-cta">
           <span>Get Quote</span>
           <i class="bi bi-arrow-right"></i>
         </a>
@@ -249,10 +243,7 @@
         </div>
         <h3>Reliability</h3>
         <p>Punctuality and dependability are non-negotiable. We arrive on time, handle your move efficiently, and deliver exactly when we commit to.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+       
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="350">
@@ -262,10 +253,7 @@
         </div>
         <h3>Care</h3>
         <p>We treat every item as precious. Our careful handling, proper packaging, and safe transport ensure your belongings arrive in perfect condition.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        
       </div>
 
       <div class="service-item" data-aos="fade-up" data-aos-delay="400">
@@ -275,10 +263,7 @@
         </div>
         <h3>Innovation</h3>
         <p>We continuously improve our methods, adopt new technologies, and find better ways to serve you. Progress is part of our DNA.</p>
-        <a href="#" class="service-cta">
-          <span>Learn More</span>
-          <i class="bi bi-arrow-right"></i>
-        </a>
+        
       </div>
 
     </div>
@@ -304,10 +289,7 @@
           <div class="service-content">
             <h3>Our Mission</h3>
             <p>To provide exceptional moving services that exceed client expectations through professionalism, reliability, and care. We aim to make every relocation smooth, secure, and stress-free.</p>
-            <a href="#" class="service-link">
-              <span>Learn More</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+            
           </div>
         </div>
       </div><!-- End Move 1 -->
@@ -320,10 +302,7 @@
           <div class="service-content">
             <h3>Our Vision</h3>
             <p>To become East Africa's leading moving company, recognized for innovation, customer satisfaction, and sustainable practices. We envision a future where relocation is effortless.</p>
-            <a href="#" class="service-link">
-              <span>Learn More</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+            
           </div>
         </div>
       </div><!-- End Move 2 -->
@@ -336,10 +315,7 @@
           <div class="service-content">
             <h3>Why Choose Us</h3>
             <p>Experienced professionals, comprehensive insurance, modern equipment, transparent pricing, and certified service. We're committed to making your move seamless.</p>
-            <a href="#" class="service-link">
-              <span>Learn More</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+            
           </div>
         </div>
       </div><!-- End Move 3 -->
@@ -352,10 +328,7 @@
           <div class="service-content">
             <h3>Our Commitment</h3>
             <p>Every move we handle reflects our dedication to quality, safety, and customer satisfaction. Your belongings are treated with the care they deserve.</p>
-            <a href="#" class="service-link">
-              <span>Learn More</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+            
           </div>
         </div>
       </div><!-- End Move 4 -->
@@ -367,7 +340,7 @@
         <div class="cta-section">
           <h4>Ready to experience the KenyaMovers difference?</h4>
           <p>Contact our team to learn more about our services and get a personalized quote for your next move.</p>
-          <a href="quote.html" class="btn-primary">
+          <a href="/quote" class="btn-primary">
             <span>Get Free Quote</span>
             <i class="bi bi-arrow-right"></i>
           </a>
@@ -618,40 +591,16 @@
           <div class="col-lg-4 col-md-6">
             <div class="team-member" data-aos="fade-up" data-aos-delay="200">
               <div class="member-img">
-                <img src="assets/img/construction/team-1.webp" class="img-fluid" alt="">
+                <img src="assets/img/movers/munene.png" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>David Kimani</h4>
+                <h4>Antony Munene</h4>
                 <span>CEO & Founder</span>
                 <p>With 15 years in logistics, David founded KenyaMovers to revolutionize the moving industry through customer-centric service.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                  <a href=""><i class="bi bi-envelope"></i></a>
-                </div>
+                
               </div>
             </div>
           </div><!-- End Team Member -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="team-member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/construction/team-3.webp" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Sarah Omondi</h4>
-                <span>Operations Manager</span>
-                <p>Sarah oversees daily operations, ensuring every move meets our high standards. Her logistics expertise guarantees smooth relocations.</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        
 
         </div>
 
@@ -730,7 +679,7 @@
               <p>Contact us today to learn more about our services and discover how we can make your relocation experience smooth and worry-free.</p>
 
               <div class="action-buttons">
-                <a href="quote.html" class="btn-primary">
+                <a href="/quote" class="btn-primary">
                   <span>Request Quote</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -746,7 +695,7 @@
                 <i class="bi bi-telephone-fill"></i>
                 <div class="contact-details">
                   <span class="contact-label">Direct Line</span>
-                  <span class="contact-value">+254 712 345 678</span>
+                  <span class="contact-value">+254768002702</span>
                 </div>
               </div>
 
@@ -754,7 +703,7 @@
                 <i class="bi bi-envelope-fill"></i>
                 <div class="contact-details">
                   <span class="contact-label">Email Us</span>
-                  <span class="contact-value">info@muneneandsons.co.ke</span>
+                  <span class="contact-value">support@muneneandsonstransporters.co.ke</span>
                 </div>
               </div>
             </div>
@@ -772,60 +721,59 @@
 
   </main>
 
- <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
 
-  <div class="container">
+    <div class="container">
     <div class="row gy-5">
 
       <div class="col-lg-4">
         <div class="footer-brand">
           <a href="/" class="logo d-flex align-items-center mb-3">
-            <span class="sitename">Munene and Sons</span>
+            <span class="sitename">Munene and Sons Transporters</span>
           </a>
           <p class="tagline">Making relocations seamless, safe, and stress-free with professional moving services.</p>
 
           <div class="social-links mt-4">
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/p/Munene-Sons-Transporters-100088968903058/?_rdc=1&_rdr# " aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            
+            <a href="https://wa.me/254711155232" target="_blank" aria-label="Whatsapp">
+                <i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/munene-murungi-21374885/ " aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@muneneandsons" aria-label="Tiktok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="footer-links-grid">
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <h5>Company</h5>
-              <ul class="list-unstyled">
-                <li><a href="/about">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">News & Updates</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Services</h5>
-              <ul class="list-unstyled">
-                <li><a href="/service">Residential Moves</a></li>
-                <li><a href="/service">Commercial Moves</a></li>
-                <li><a href="/service">Packing & Storage</a></li>
-                <li><a href="/service">Long-Distance Relocation</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4">
-              <h5>Support</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Help Center</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+ <div class="col-lg-6">
+  <div class="footer-links-grid">
+    <div class="row">
+      <!-- Location -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h5 class="fw-bold mb-3">Location</h5>
+        <ul class="list-unstyled">
+          <li>Thika, Kenya</li>
+          <li>Opposite Christian Outreach</li>
+          <li>Kwiz Cyber Building</li>
+          <li><strong>Phone:</strong> +254 768 002 702</li>
+          <li><strong>Email:</strong> info@muneneandsonstransporters.co.ke</li>
+        </ul>
       </div>
+
+      <!-- Services -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="/service" class="text-decoration-none text-light">Residential Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Commercial Moves</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Packing & Storage</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">House & Hunting</a></li>
+          <li><a href="/service" class="text-decoration-none text-light">Long-Distance Relocation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <div class="col-lg-2">
         <div class="footer-cta">
@@ -842,9 +790,9 @@
       <div class="row">
         <div class="col-12">
           <div class="footer-bottom-content">
-            <p class="mb-0">© <span class="sitename">KenyaMovers</span>. All rights reserved.</p>
+            <p class="mb-0">© <span class="sitename">Munene and Sons Transporters</span>. All rights reserved.</p>
             <div class="credits">
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by <a href="https://artechullatesoluutions.co.ke">Artechulate Solutions</a>
             </div>
           </div>
         </div>

@@ -72,7 +72,7 @@ class QuoteController extends Controller
         $quoteRequest = QuoteRequest::create($validated);
 
         // Send email to admin
-        Mail::to(config('mail.admin_email', 'allanmurimi96@gmail.com'))
+        Mail::to(config('mail.from.address'))
             ->send(new QuoteRequestReceived($quoteRequest));
 
         // Send confirmation email to customer
