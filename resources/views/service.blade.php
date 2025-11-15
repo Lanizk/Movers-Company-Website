@@ -8,9 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <!-- <link href="/assets/img/favicon.png" rel="icon"> -->
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+ 
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -47,11 +45,12 @@
           <li><a href="/about" class="{{ Request::is('about') ? 'active' : '' }}">About</a></li>
           <li><a href="/service" class="{{ Request::is('service') ? 'active' : '' }}">Services</a></li>
           <li><a href="/contact" class="{{ Request::is('contact') ? 'active' : '' }}">Contact</a></li>
+          <li><a  href="/quote" class="{{ Request::is('quote') ? 'active' : '' }}" >Request Quote</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted d-none d-sm-block" href="/quote">Request Quote</a>
+     
 
     </div>
   </header>

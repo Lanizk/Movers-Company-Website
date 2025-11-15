@@ -245,11 +245,12 @@
           <li><a href="/about">About</a></li>
           <li><a href="/service">Services</a></li>
           <li><a href="/contact">Contact</a></li>
+          <li><a  href="/quote" class="{{ Request::is('quote') ? 'active' : '' }}" >Request Quote</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted d-none d-sm-block" href="/quote">Request Quote</a>
+    
 
     </div>
   </header>
